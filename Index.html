@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Restaurante Italiano - Inicio</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+   <h1>Restaurante Di Aragones</h1>   
+</header>
+
+   <nav>
+      <ul>
+         <li><a href="Index.html">Inicio</a></li>
+         <li><a href="menu-comida.html">Menú Comida</a></li>
+         <li><a href="galeria.html">Galería</a></li>
+         <li><a href="promociones.html">Promociones</a></li>
+      </ul>
+   </nav>
+
+   <main>
+      <section class="section" id="inicio">
+         <h2>Bienvenidos a Restaurante Di Aragones</h2>
+         <p>Disfruta de una experiencia culinaria única en un ambiente sofisticado. Nuestro proposito es crear platos que combinan los sabores más frescos y de temporada para deleitar tu paladar.</p>
+         <p>"En el corazón de la ciudad, nuestro restaurante trae la esencia de Italia en cada plato. Inspirados por recetas familiares y tradiciones centenarias, cada ingrediente es una invitación a viajar por los sabores de la Toscana, Sicilia y Roma. Aquí, cada comida es una historia que te transporta a una auténtica trattoria italiana, donde el buen vino, la pasta fresca y los amigos se encuentran como en casa."</p>
+      </section>
+
+      <section class="carousel">
+         <div class="slides">
+            <div class="slide"><img src="img/restauranteItaliano.jpg" alt="Plato Italiano 1"></div>
+            <div class="slide"><img src="img/RestauranteItalo.webp" alt="Plato Italiano 2"></div>
+            <div class="slide"><img src="img/italianos-valenciano-1024x683.jpg" alt="Plato Italiano 3"></div>
+            <div class="slide"><img src="img/vista-principal.jpg" alt="Plato Italiano 4"></div>
+         </div>
+      </section>
+
+      <button class="reserve-btn" onclick="document.getElementById('reservation-modal').style.display='block'">
+         Reservar
+      </button>
+
+      <!-- Modal de Reserva -->
+      <div id="reservation-modal" class="modal">
+         <div class="modal-content">
+            <span class="close-btn" onclick="document.getElementById('reservation-modal').style.display='none'">&times;</span>
+            <h2>Reserva tu Mesa</h2>
+            <form>
+               <label for="name">Nombre:</label>
+               <input type="text" id="name" name="name" required>
+
+               <label for="phone">Número de Teléfono:</label>
+               <input type="tel" id="phone" name="phone" required>
+
+               <label for="date">Fecha de Reserva:</label>
+               <input type="date" id="date" name="date" required>
+
+               <label for="email">Correo Electrónico:</label>
+               <input type="email" id="email" name="email" required>
+
+               <button type="submit" class="submit-btn">Enviar Reserva</button>
+            </form>
+         </div>
+      </div>
+   </main>
+
+   <section class="contact" id="contacto">
+      <h2>Contacto</h2>
+      <p>Ubicación: Av. Universidad Nacional S/N, Bosques de Aragon, 57171 Cdad. Nezahualcóyotl, Méx.</p>
+      <p>Teléfono: <a href="tel:+1234567890">+123 456 7890</a></p>
+      <p>Email: <a href="mailto:alumno@aragon.unam.mx">adolfoortiz117@aragon.unam.mx</a></p>
+      <p>Síguenos en nuestras redes sociales para estar al tanto de las novedades y eventos especiales.</p>
+   </section>
+</body>
+</html>

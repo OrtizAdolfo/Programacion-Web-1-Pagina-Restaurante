@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body {
+   font-family: 'Lora', serif;
+   margin: 0;
+   padding: 0;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   background-color: #f8f8f8;
+ }
+ header {
+    background-color: #691d1d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+ }
+
+ h1 {
+   font-size: 2.8em;
+   font-weight: 600;
+   margin: 0;
+   margin-bottom: 20px;
+}
+
+p{
+   text-align: center;
+   margin: 20px 0;
+}
+ nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+    list-style-type: none;
+ }
+ nav ul li {
+    margin: 0 15px;
+ }
+ nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ nav ul li a:hover {
+    color: #ff6347;
+ }
+ 
+ .main-section {
+    padding: 50px;
+    text-align: center;
+ }
+
+
+
+ .menu-section, .gallery, .promotions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+ }
+ .menu-item, .promo-item {
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ .menu-item img, .gallery img, .promo-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+ }
+
+
+
+.menu {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   padding: 20px;
+   justify-content: center;
+}
+
+.dish {
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 280px;
+   text-align: center;
+   padding: 15px;
+}
+
+.dish img {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+   margin-bottom: 10px;
+}
+
+.dish h2 {
+   font-size: 1.5em;
+   color: #333;
+}
+
+
+
+/* Estilos de contacto */
+.contact {
+   background-color: #0f682d;
+   color: #fff;
+   padding: 50px 0;
+   text-align: center;
+}
+.contact p {
+   max-width: 600px;
+   margin: 10px auto;
+}
+.contact a {
+   color: #ff6347;
+   text-decoration: none;
+}
+.contact a:hover {
+   text-decoration: underline;
+}
+.section {
+   padding: 50px;
+   text-align: center;
+}
+.section h2 {
+   font-size: 2rem;
+   color: #0f0d0d;
+   margin-bottom: 20px;
+}
+.section p {
+   max-width: 600px;
+   margin: 0 auto;
+   color: #201d1d;
+   line-height: 1.6;
+   text-align: justify;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+
+/*estio del carrusel*/
+.carousel {
+   width: 80%;
+   max-width: 800px;
+   height: 400px;
+   margin: 50px auto;
+   overflow: hidden;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+   display: flex;
+   width: 100%;
+   animation: slide-animation 16s infinite;
+}
+
+.slide {
+   width: 100%;
+   flex: 1 0 100%;
+}
+
+.slide img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+@keyframes slide-animation {
+   0% { transform: translateX(0%); }
+   25% { transform: translateX(-100%); }
+   50% { transform: translateX(-200%); }
+   75% { transform: translateX(-300%); }
+   100% { transform: translateX(0%); }
+}
+
+
+/* Estilos para boton */
+
+
+.reserve-btn {
+   font-size: 18px;
+   padding: 10px 20px;
+   background-color: #1c6e1e;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   transition: background-color 0.3s;
+}
+
+.reserve-btn:hover {
+   background-color: #116115;
+}
+
+
+
+/* Estilos para el modal */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.4);
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-content {
+   background-color: #fff;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 300px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.close-btn:hover {
+   color: #000;
+}
+
+.modal-content h2 {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+label {
+   margin: 5px 0;
+}
+
+input[type="text"], input[type="tel"], input[type="date"], input[type="email"] {
+   padding: 10px;
+   margin: 5px 0 15px 0;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   width: 100%;
+}
+
+.submit-btn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+   background-color: #45a049;
+}
+
+
+
+/* Estilos de galería */
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 15px;
+   margin-top: 20px;
+}
+.gallery img {
+   width: 300px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 10px;
+   transition: transform 0.3s;
+}
+.gallery img:hover {
+   transform: scale(1.05);
+}
+
